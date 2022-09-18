@@ -1,0 +1,8 @@
+.result-container {
+	border: 1px black solid;
+	font-size: 1.5em;
+	padding: 20px 5px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}

@@ -1,0 +1,27 @@
+.panel-container {
+	display: grid;
+	border: 1px blue solid;
+	grid-template-columns: 100px 100px 100px 100px;
+	gap: 2px;
+}
+
+.panel-container > button {
+	font-size: 1.5em;
+	padding: 20px;
+	border: none;
+}
+
+.panel-container > button:hover {
+	background-color: gainsboro;
+}
+.panel-container > button:active {
+	background-color: transparent;
+}
+
+.ac {
+	grid-column: 1 / span 2;
+}
+
+.equal {
+	grid-column: 3 / span 2;
+}
