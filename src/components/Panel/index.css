@@ -1,7 +1,8 @@
 .panel-container {
 	display: grid;
 	border: 1px blue solid;
-	grid-template-columns: 100px 100px 100px 100px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: minmax(20px, 80px);
 	gap: 2px;
 }
 
@@ -24,4 +25,14 @@
 
 .equal {
 	grid-column: 3 / span 2;
+}
+
+.result {
+	display: flex;
+	border-bottom: 2px blue solid;
+	grid-column: 1/-1;
+	padding-right: 10px;
+	font: 2em Arial, Helvetica, sans-serif;
+	justify-content: flex-end;
+	align-items: center;
 }
