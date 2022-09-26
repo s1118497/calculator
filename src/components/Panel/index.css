@@ -5,24 +5,20 @@
 	gap: 3px;
 	opacity: 0.8;
 }
-
 .panel-container > button {
 	font: 1.5em Verdana, Georgia, monospace;
 	padding: 20px;
 	border: none;
 }
-
 .panel-container > button:hover {
 	background-color: gainsboro;
 }
 .panel-container > button:active {
 	background-color: transparent;
 }
-
 .ac {
 	grid-column: 1 / span 2;
 }
-
 .equal {
 	grid-column: 3 / span 2;
 }
