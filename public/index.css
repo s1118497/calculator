@@ -1,6 +1,13 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
 body {
 	display: flex;
 	justify-content: center;
+	background-image: linear-gradient(to right, rgb(38, 142, 190), rgb(40, 228, 84));
+	background-color: aquamarine;
 }
 #root {
 	width: fit-content;
