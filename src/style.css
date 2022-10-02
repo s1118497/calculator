@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	/* when linear-gradient is not supported, show bgc to aqua colour */
+	background: linear-gradient(to right, #00aaff, #00ff6c) aqua;
+}
+.calculator-grid {
+	display: grid;
+	justify-content: center;
+	margin-top: 2rem;
+	grid-template-columns: repeat(4, 6rem);
+	/*
+		first row height setting specify
+		min 7em | max auto (expand with output content)
+			repeat 5 rows: 5 rows button + 1 row output
+	 */
+	grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
+}
+.span-two {
+	grid-column: span 2;
+}
+.output {
+	grid-column: 1 / -1;
+	background-color: rgb(0, 0, 0, 0.75);
+	color: rgb(255, 255, 255, 1);
+	display: flex;
+	/* main- cross- axis exhange */
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: flex-end;
+	padding: 0.75rem;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+.output > .previous-operand {
+	font-size: 1.5rem;
+}
+.output > .current-operand {
+	font-size: 2.5rem;
+}
+.calculator-grid > button {
+	cursor: pointer;
+	font-size: 2rem;
+	border: 1px solid white;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.75);
+}
+.calculator-grid > button:hover,
+.calculator-grid > button:focus {
+	background-color: rgba(255, 255, 255, 0.9);
+}
